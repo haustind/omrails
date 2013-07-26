@@ -23,6 +23,8 @@ gem 'turbolinks'
 
 gem 'jbuilder', '~> 1.2'
 
+gem 'rails_12factor'
+
 group :doc do
   gem 'sdoc', require: false
 end
