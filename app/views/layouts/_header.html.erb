@@ -10,7 +10,7 @@
       </a>
  
       <!-- Be sure to leave the brand out there if you want it shown -->
-      <a class="brand" href="#">Social Media Redefined</a>
+      <%= link_to "Social Media Redefined", root_path, class: "brand" %>
  
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
@@ -22,7 +22,12 @@
         </ul>      
         <ul class="nav pull-right">
           <li><%= link_to "Investor Relations", investors_path %></li>
-          <li><%= link_to "Log In", new_user_registration_path %></li>
+            <% if user_signed_in? %>
+              <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li> 
+                <% else %>
+              <li><%= link_to "Log In", new_user_session_path %></li>
+               <% end %>
+
 
         <ul>
         <!-- .nav, .navbar-search, .navbar-form, etc -->
