@@ -1,7 +1,8 @@
 Omrails::Application.routes.draw do
   get 'about' => 'pages#about'
-  get "team" => 'pages#team'
-
+  get 'team' => 'pages#team'
+  get 'services' => 'pages#services'
+  get 'investors' => 'pages#investors'
   root :to => 'pages#home' 
 
   # The priority is based upon order of creation: first created -> highest priority.
