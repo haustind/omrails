@@ -3,6 +3,8 @@ ruby "1.9.3"
 
 gem 'rails', '4.0.0'
 
+gem 'devise'
+
 group :production do
   gem 'pg'
 end
