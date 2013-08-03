@@ -1,3 +1,9 @@
+
+
+
+
+
+
 <div class="navbar navbar-fixed-bottom">
   <div class="navbar-inner">
     <div class="container">
@@ -13,12 +19,29 @@
       <%= link_to "Social Media Redefined", root_path, class: "brand" %>
     
  
-      <!-- Everything you want hidden at 940px or less, place within here -->
+      <!-- Everything you want hidden at 940px or less, place within here --> 
       <div class="nav-collapse collapse">
         <ul class="nav"> 
         </ul>      
         <ul class="nav pull-right">
           <li><%= link_to "Contact Us", investors_path %></li>
+
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="jquery.backstretch.min.js"></script>
+<script>
+  // To attach Backstrech as the body's background
+  $.backstretch("path/to/image.jpg");
+
+  // You may also attach Backstretch to a block-level element
+  $(".foo").backstretch("path/to/image.jpg");
+
+  // Or, to start a slideshow, just pass in an array of images
+  $(".foo").backstretch([
+    "path/to/image.jpg",
+    "path/to/image2.jpg",
+    "path/to/image3.jpg"    
+  ], {duration: 4000});
+</script>
             
 
 
@@ -31,8 +54,17 @@
 </div>
 
 
-<div class="footer">
-	<small>
-		By Austin H. (aka Senor Suave)
-	</small>	
+<div class="footer, well">
+	 <center>
+		<%= link_to "", twitter_path, class: "icon-twitter icon-4x icon-blue" %>
+    <%= link_to "", facebook_path, class: "icon-facebook icon-4x icon-blue" %>
+    <%= link_to "", foursquare_path, class: "icon-foursquare icon-4x icon-blue" %>
+    <%= link_to "", linkedin_path, class: "icon-linkedin icon-4x icon-blue" %>
+    <%= link_to "", pinterest_path, class: "icon-pinterest icon-4x icon-blue" %>
+    <%= link_to "", youtube_path, class: "icon-youtube icon-4x icon-blue" %>
+    <%= link_to "", google_path, class: "icon-google_plus icon-4x icon-blue" %>
+    <%= link_to "", tumblr_path, class: "icon-tumblr icon-4x icon-blue" %>
+  </center>
+    
+	
 </div>	

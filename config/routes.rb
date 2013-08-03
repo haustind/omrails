@@ -3,6 +3,21 @@ Omrails::Application.routes.draw do
 
   devise_for :users
   devise_for :models
+  get 'twitter' => 'pages#twitter'
+  get 'facebook' => 'pages#facebook'
+  get 'linkedin' => 'pages#linkedin'
+  get 'instagram' => 'pages#instagram'
+  get 'pinterest' => 'pages#pinterest'
+  get 'blog' => 'pages#blog'
+  get 'google' => 'pages#google'
+  get 'youtube' => 'pages#youtube'
+   get 'foursquare' => 'pages#foursquare'
+  get 'tumblr' => 'pages#tumblr'
+  
+
+
+
+
   get 'about' => 'pages#about'
   get 'team' => 'pages#team'
   get 'services' => 'pages#services'
